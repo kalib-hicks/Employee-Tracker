@@ -94,3 +94,24 @@ function viewAllDepts() {
     startPrompt()
     })
   };
+
+  // view roles connection
+function viewAllRoles() {
+    connection.query("SELECT title, salary, department_id FROM role JOIN department GROUP BY department_id;", 
+    function(err, res) {
+    if (err) throw err
+    console.table(res)
+    startPrompt()
+    })
+  };
+  
+  // view employees by department conenction
+  function viewAllDepartments() {
+    connection.query("SELECT employee.first_name, employee.last_name, department.name AS Department FROM employee JOIN role ON employee.role_id = role.id JOIN department ON role.department_id = department.id ORDER BY employee.id;", 
+    function(err, res) {
+      if (err) throw err
+      console.table(res)
+      startPrompt()
+    })
+  };
+  
