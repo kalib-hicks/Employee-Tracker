@@ -74,3 +74,23 @@ function startPrompt() {
             }
     })
 }
+
+// view employees connection
+function viewAllEmployees() {
+    connection.query("SELECT * FROM employee;", 
+    function(err, res) {
+      if (err) throw err
+      console.table(res)
+      startPrompt()
+  })
+};
+
+// view department connection
+function viewAllDepts() {
+    connection.query("SELECT * FROM department;", 
+    function(err, res) {
+    if (err) throw err
+    console.table(res)
+    startPrompt()
+    })
+  };
