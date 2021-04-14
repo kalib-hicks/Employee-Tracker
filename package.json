@@ -4,13 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "console.table": "^0.10.0",
     "inquirer": "^8.0.0",
+    "mysql": "^2.18.1",
     "mysql2": "^2.2.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalib-hicks/Employee-Tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kalib-hicks/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/kalib-hicks/Employee-Tracker#readme"
 }
