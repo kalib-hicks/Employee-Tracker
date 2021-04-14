@@ -5,19 +5,21 @@ const mysql = require("mysql2")
 const cTable = require('console.table');
 
 // connection to server
+// create the connection to database
 const connection = mysql.createConnection({
-    host: "localhost",
+    host: 'localhost',
     port: 3306,
-    user: "root",
-    password: "password",
-    database: "employees_db"
+    user: 'root',
+    password: 'Ktkh.1218958!?.',
+    database: 'employees_db'
   });
 
-  connection.connect(function(err) {
-    if (err) throw err
-    console.log("Connected as Id" + connection.threadId)
+connection.connect((err) => {
+    if (err) throw err;
+
     startPrompt();
 });
+
 
 // start question prompts
 function startPrompt() {
