@@ -1,9 +1,4 @@
-/* check if database exists already */
 
-DROP DATABASE IF EXISTS employees_db;
-
-/* create databse */
-CREATE database employees_db;
 
 USE employees_db;
 
