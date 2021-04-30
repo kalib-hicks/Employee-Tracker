@@ -13,7 +13,7 @@ Employee-Tracker is an application that allows the user to manage database infor
 To use this application, the user must sintall inquirer, mysql2, and console.table npms.
 
 ## <a name="usage"/>Usage
-Link to video demonstrating process of using the application:
+Link to video demonstrating process of using the application: https://drive.google.com/file/d/1yDWTH_jcafIovu5FPlGrko3ztQbjN2Mz/view
 
 ## <a name="credits"/>Credits
 
